@@ -1,1 +1,13 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+:root{
+    --action: #FE6D3F;
+    --primary: #6226E1;
+    --secondary: #A866FC;
+    --tertiary: #E645E8;
+    --accents: #08B1FA;
+    --textDark: #333;
+    --textLight: #fff;
+    --textLighter: #eee;
+    --gradientPrimary: linear-gradient(90deg, #E645E8 0%, #6200DE 100%);
+    --canvas: #fff;
+    --canvasGray: #F8F8F8;
+}
