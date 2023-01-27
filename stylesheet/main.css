@@ -4,10 +4,215 @@
     --secondary: #A866FC;
     --tertiary: #E645E8;
     --accents: #08B1FA;
-    --textDark: #333;
-    --textLight: #fff;
-    --textLighter: #eee;
+    --dark: #333;
+    --light: #fff;
+    --subtle: #eee;
     --gradientPrimary: linear-gradient(90deg, #E645E8 0%, #6200DE 100%);
     --canvas: #fff;
     --canvasGray: #F8F8F8;
+    --xs: 0.75rem;
+    --sm: 0.875rem;
+    --md: 1rem;
+    --lg: 1.25rem;
+    --xl: 1.5rem;
+    --2xl: 2rem;
+    --3xl: 2.5rem;
+    --4xl: 3rem;
+    --5xl: 4rem;
 }
+body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.navbar{
+    position: inherit;
+}
+.page-center{
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+.font-xs{
+    font-size:var(--xs);
+}
+.font-sm{
+    font-size:var(--sm);
+}
+.font-md{
+    font-size: var(--md);
+}
+.font-lg{
+    font-size: var(--lg);
+}
+.font-xl{
+    font-size: var(--xl);
+}
+.font-2xl{
+    font-size: var(--2xl);
+}
+.font-3xl{
+    font-size: var(--3xl);
+}
+.font-4xl{
+    font-size: var(--4xl);
+}
+.font-5xl{
+    font-size: var(--5xl);
+}
+
+/* height  */
+.h-xs{
+    height: var(--xs);
+}
+.h-sm{
+    height: var(--sm);
+}
+.h-md{
+    height: var(--md);
+}
+.h-lg{
+    height: var(--lg);
+}
+
+}
+.h-xl{
+    height: var(--xl);
+}
+.h-2xl{
+    height: var(--2xl);
+}
+.h-3xl{
+    height: var(--3xl);
+}
+.h-4xl{
+    height: var(--4xl);
+}
+.h-5xl{
+    height: var(--5xl);
+}
+
+
+/* width  */
+.w-xs{
+    width: var(--xs);
+}
+.w-sm{
+    width: var(--sm);
+}
+.w-md{
+    width: var(--md);
+}
+.w-lg{
+    width: var(--lg);
+}
+.w-xl{
+    width: var(--xl);
+}
+.w-2xl{
+    width: var(--2xl);
+}
+.w-3xl{
+    width: var(--3xl);
+}
+.w-4xl{
+    width: var(--4xl);
+}
+.w-5xl{
+    width: var(--5xl);
+}
+
+/* button  */
+.btn{
+    font-size: var(--sm);
+    padding: var(--xs) var(--md);
+    border-radius: var(--5xl);
+    font-weight: 600;
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--light);
+}
+.shadow{
+    background: var(--light);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.04);
+}
+.temp-column-2{
+    grid-template-columns: 1fr 1fr;
+}
+.temp-column-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media(min-width:992px){
+    .mobile{
+        display: none;
+    }
+}
+
+@media(max-width:992px){
+    .desktop{
+        display: none;
+    }
+    .fab{
+        position: fixed;
+        bottom: var(--lg);
+        right: var(--lg);
+    }
+}
+
+/* search  */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
