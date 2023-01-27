@@ -1,0 +1,170 @@
+{
+    "Badge": {
+      "Frame": {
+        "variants": {
+          "size": {
+            "sm": {
+              "height": {
+                "value": "{sizing.rem.5}",
+                "type": "sizing"
+              },
+              "TextVariant": {
+                "value": {
+                  "typography": "{typography.label.2xs}"
+                },
+                "type": "composition"
+              }
+            },
+            "lg": {
+              "height": {
+                "value": "{sizing.rem.7}",
+                "type": "sizing"
+              },
+              "TextVariant": {
+                "value": {
+                  "typography": "{typography.label.sm}"
+                },
+                "type": "composition"
+              }
+            }
+          },
+          "variant": {
+            "subtleHighlight": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Subtle.Highlight}",
+                "type": "color"
+              }
+            },
+            "subtleNeutral": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Subtle.Disabled}",
+                "type": "color"
+              }
+            },
+            "subtleSuccess": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Subtle.Success}",
+                "type": "color"
+              }
+            },
+            "subtleWarning": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Subtle.Warning}",
+                "type": "color"
+              }
+            },
+            "subtleInformation": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Subtle.Information}",
+                "type": "color"
+              }
+            },
+            "solidHighlight": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Solid.Highlight}",
+                "type": "color"
+              }
+            },
+            "solidNeutral": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Solid.Neutral}",
+                "type": "color"
+              }
+            },
+            "solidSuccess": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Solid.Success}",
+                "type": "color"
+              }
+            },
+            "solidWarning": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Solid.Warning}",
+                "type": "color"
+              }
+            },
+            "solidInformation": {
+              "backgroundColor": {
+                "value": "{Theme.Background.Solid.Information}",
+                "type": "color"
+              }
+            }
+          }
+        },
+        "PaddingHorizontal": {
+          "value": "{spacing.rem.1}",
+          "type": "spacing"
+        },
+        "borderRadius": {
+          "value": "{borderRadius.rem.base}",
+          "type": "borderRadius"
+        }
+      },
+      "Text": {
+        "variants": {
+          "variant": {
+            "subtleHighlight": {
+              "color": {
+                "value": "{Theme.Text.Solid.Highlight}",
+                "type": "color"
+              }
+            },
+            "subtleNeutral": {
+              "color": {
+                "value": "{Theme.Text.Solid.Neutral}",
+                "type": "color"
+              }
+            },
+            "subtleSuccess": {
+              "color": {
+                "value": "{Theme.Text.Solid.Success}",
+                "type": "color"
+              }
+            },
+            "subtleWarning": {
+              "color": {
+                "value": "{Theme.Text.Solid.Warning}",
+                "type": "color"
+              }
+            },
+            "subtleInformation": {
+              "color": {
+                "value": "{Theme.Text.Solid.Information}",
+                "type": "color"
+              }
+            },
+            "solidHighlight": {
+              "color": {
+                "value": "{Theme.Text.Solid.Invert}",
+                "type": "color"
+              }
+            },
+            "solidNeutral": {
+              "color": {
+                "value": "{Theme.Text.Solid.Invert}",
+                "type": "color"
+              }
+            },
+            "solidSuccess": {
+              "color": {
+                "value": "{Theme.Text.Solid.Invert}",
+                "type": "color"
+              }
+            },
+            "solidWarning": {
+              "color": {
+                "value": "{Theme.Text.Solid.Invert}",
+                "type": "color"
+              }
+            },
+            "solidInformation": {
+              "color": {
+                "value": "{Theme.Text.Solid.Invert}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
