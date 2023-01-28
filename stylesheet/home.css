@@ -1,0 +1,116 @@
+@media(max-width:992px){
+    .group-card{
+        display: flex !important;
+        overflow-x: auto;
+    }
+    .card-custom{
+        box-sizing: border-box;
+        min-width: 250px;
+    }
+}
+
+/* search  */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+
+  /* recommendation section */
+  .container-recommendation{
+    /* background: var(--gradientPrimary); */
+    /* background: url('../asset/bg-2.png'); */
+    /* background: linear-gradient(90.48deg, #FFE8CE 0.44%, #FEBEA6 99.66%); */
+    background: linear-gradient(90.48deg, #DBCEFF 0.44%, #FEBEA6 99.66%);
+  }
+  .card{
+    border: none;
+    box-shadow: var(--shadow);
+  }
+  .card-custom{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+box-shadow: 0px 4px 24px 1px rgba(35, 16, 94, 0.25);
+backdrop-filter: blur(22.5px);
+/* /* padding: var(--2xl); */
+border-radius: var(--2xs);
+border: none;
+  }
+  .card:hover{
+    transform: scale(1.2);
+    z-index: 99;
+    opacity: 1;
+    background: var(--primary);
+    color: var(--light);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .card-custom:hover{
+    transform: scale(1.2);
+    z-index: 99;
+    opacity: 1;
+    background: var(--canvas);
+    color: var(--dark);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .card-custom{
+    border-radius: var(--2xs);
+  }
+  .card, .card-custom img{
+    border-top-left-radius: var(--2xs);
+    border-top-right-radius: var(--2xs);
+    width: 100%;
+  }
+
+  .detail-card-custom span{
+    font-size: var(--xs);
+    opacity: 0.5;
+}

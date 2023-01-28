@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="stylesheet" href="stylesheet/start.css">
+</head>
+<body>
+    <!-- navbar  -->
+    <div class="shadow">
+        <div class="page-center">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a href="#">
+                <div class="profile d-flex my-auto gap-3">
+                  <div class="profile__detail my-auto">
+                    <p id="title" contenteditable="true"><b>Untitled</b></p>
+                  </div>
+                </div>
+              </a>
+              
+              <div class="cta d-flex gap-2">
+                <button class="btn btn-secondary w-10xl">Preview</button>
+                <button class="btn btn-primary w-10xl">Download</button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="canvas py-4" id="canvas">
+        <div class="page-center">
+            <div class="page-content m-auto">
+                <div id="add">
+                    <div class="center mb-2">
+                        <img src="asset/ic-add.svg" alt="Icon Add">
+                    </div>
+                <p>Add new section here</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- on page load popup -->
+      <div id="overlay">
+        <div class="popup">
+            <img id="close" src="asset/ic-close.svg" alt="Close">
+            <h3>What kind of website do you want to build?</h3>
+            <div class="mt-4 group-card d-grid temp-column-3 gap-3">
+                <div class="card">
+                    <img src="asset/temp-2.png" alt="Project">
+                    <div class="detail-card-custom p-3">
+                      <p class="semibold">Title Project</p>
+                      
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="asset/temp-2.png" alt="Project">
+                    <div class="detail-card-custom p-3">
+                      <p class="semibold">Title Project</p>
+                      
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="asset/temp-2.png" alt="Project">
+                    <div class="detail-card-custom p-3">
+                      <p class="semibold">Title Project</p>
+                      
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="asset/temp-2.png" alt="Project">
+                    <div class="detail-card-custom p-3">
+                      <p class="semibold">Title Project</p>
+                      
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="asset/temp-2.png" alt="Project">
+                    <div class="detail-card-custom p-3">
+                      <p class="semibold">Title Project</p>
+                      
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="asset/temp-2.png" alt="Project">
+                    <div class="detail-card-custom p-3">
+                      <p class="semibold">Title Project</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- popup menu  -->
+      <div id="sidebar">
+        <div class="content">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Navbar
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="javascript/function.js"></script>
+    <script src="javascript/popup.js"></script>
+</body>
+</html>

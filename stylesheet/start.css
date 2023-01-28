@@ -1,0 +1,66 @@
+.page-content{
+    background: var(--light);
+    min-height: 100vh;
+    height: 100%;
+    border-radius: var(--2xs);
+}
+#add{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.popup{
+    background: var(--light);
+    padding: var(--xl);
+    border-radius: var(--2xs);
+    max-width: 800px;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+#close{
+    position: absolute;
+    right: 1.25rem;
+    cursor: pointer;
+    top: 1.25rem;
+}
+#overlay{
+    background: rgba(51, 51, 51, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#sidebar{
+    display: none;
+}
+#sidebar{
+    position: fixed;
+    top: 84px;
+    left: 24px;
+    /* background: var(--dark); */
+    background: linear-gradient(242.6deg, rgba(98, 38, 225, 0.4) 6.07%, rgba(255, 212, 212, 0.238621) 99.08%, rgba(255, 212, 212, 0) 99.09%);
+    opacity: 0.8;
+opacity: 0.8;
+backdrop-filter: blur(40px);
+    width: 400px;
+    padding: var(--xl);
+    box-shadow: var(--shadow);
+    border-radius: var(--2xs);
+    z-index: 999;
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--primary);
+    background-color: rgba(168, 102, 252, 0.1);
+}
